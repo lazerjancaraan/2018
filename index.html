@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <link rel="stylesheet" href="css/skill-section.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/camera.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script>
+    $(window).load(function(){
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    $('.gallery .gall_item').touchTouch();
+    });
+    $(document).ready(function(){
+    jQuery('#camera_wrap').camera({
+    loader: false,
+    pagination: true ,
+    minHeight: '500',
+    thumbnails: false,
+    height: '44.42708333333333%',
+    caption: true,
+    navigation: false,
+    fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+    });
+    </script>
+  </head>
+  <body>
+    <div class="texture">
+      <!--==============================
+      header
+      =================================-->
+      <header id="home" class="page">
+        <div class="navigation single-page-nav">
+          <div class="container_12">
+            <div class="grid_12">
+              <h1 class="logo">
+              <a href="index.html">L. Caraan</a>
+              </h1>
+              <nav>
+                <ul>
+                  <li><a href="#home" class="current">Home</a></li>
+                  <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#testimonials">Seminar Attended and Certificate</a></li>
+                  <!-- <li><a href="#contacts">Contacts</a></li> -->
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div id="camera_wrap">
+          <div data-src="images/slide-1.jpeg">
+            <div class="caption fadeIn"> Front-end <span class="bull"></span> Coder  <span class="bull"></span> Designer</div>
+          </div>
+          <div data-src="images/slide-2.jpg">
+            <div class="caption fadeIn">Impressive Designs, Suitable for Cool Projects</div>
+          </div>
+          <div data-src="images/slide-3.jpeg">
+            <div class="caption fadeIn">Designs that Work for Your Benefits</div>
+          </div>
+        </div>
+      </header>
+      <!--=====================
+      Content
+      ======================-->
+      <section class="content">
+        <div class="ic">More Website Templates @ TemplateMonster.com - October 20, 2014!</div>
+        <div class="pad-1">
+          <div class="container_12">
+            <div class="grid_12">
+              <h2>About Me
+              <span>THE BRIEF INTRODUCTION OF MYSELF</span>
+              </h2>
+              <p class="offset__1">To be able to contribute my knowledge and skills in my chosen field of work where I can use my strong interpersonal skills and my eagerness to contribute to a quality company. I am looking for meaningful career where I can achieve personal and professional growth.</p>
+              <img src="images/profile-pic.jpg" alt="" class="fleft">
+              <div class="extra_wrapper">
+                <div class="text-1">
+                  Lazer Jan Caraan
+                </div>
+                <div class="text-2 color1">
+                  <a href="#">Front-end</a> &bull;
+                  <a href="#">Coder</a> &bull;
+                  <a href="#">Designer</a>
+                </div>
+                
+                Address: Greenfields Sindalan City of San Fernando Pampanga <br>
+                Contact no: 09263593488<br>
+                E-mail address: lazerjan11@gmail.com  <br>
+                <!--        <form method="get" action="LazerJanCaraan.pdf">
+                  <button type="submit">Download!</button>
+                </form> -->
+                <a href="images/LazerJanCaraan.pdf" class="btn" download="LazerJanCaraanResume">Download</a>
+                <!-- <a href="#" class="btn">Download Resume</a> -->
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- <section id="portfolio" class="page">
+          <div class="container_12">
+            <div class="grid_12">
+              <h2 class="color2">My Portfolio</h2>
+              <div id="filters" class="button-group">
+                <a href="#" class="btn is-checked" data-filter="*">Show all</a>
+                <a href="#" class="btn" data-filter=".ill">Illustration</a>
+                <a href="#" class="btn" data-filter=".photo">Photography</a>
+                <a href="#" class="btn" data-filter=".design">Design</a>
+              </div>
+              <div class="el gallery" id="isotope">
+                <div class="element design">
+                  <div>
+                    <a href="images/big1.jpg" class="gall-item"><img src="images/gal_img1.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+                <div class="element photo">
+                  <div>
+                    <a href="images/big2.jpg" class="gall-item"><img src="images/gal_img2.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+                <div class="element  photo">
+                  <div>
+                    <a href="images/big3.jpg" class="gall-item"><img src="images/gal_img3.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <div class="element ill">
+                  <div>
+                    <a href="images/big4.jpg" class="gall-item"><img src="images/gal_img4.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+                <div class="element ill">
+                  <div>
+                    <a href="images/big5.jpg" class="gall-item"><img src="images/gal_img5.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+                <div class="element design">
+                  <div>
+                    <a href="images/big6.jpg" class="gall-item"><img src="images/gal_img6.jpg" alt=""><span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </section> -->
+        <section id="skills" class="page">
+          <!--   <div class="container_12">
+            <div class="grid_12">
+              <h2>Skills</h2>
+            </div>
+            <div class="grid_3">
+              <div style="clear:both"></div>
+              <div class="circle">
+                <input class="knob" data-angleOffset="0" value="93" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+              </div>
+              <div class="text-3"><a href="#">Photoshop</a></div>
+            </div>
+            <div class="grid_3">
+              <div class="circle">
+                <input class="knob" data-angleOffset="0" value="82" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+              </div>
+              <div class="text-3"><a href="#">HTML5/CSS3</a></div>
+            </div>
+            <div class="grid_3">
+              <div class="circle">
+                <input class="knob" data-angleOffset="0" value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+              </div>
+              <div class="text-3"><a href="#">Photography</a></div>
+            </div>
+            <div class="grid_3">
+              <div class="circle">
+                <input class="knob" data-angleOffset="0" value="89" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+              </div>
+              <div class="text-3"><a href="#">PHP/MYSQL</a></div>
+            </div>
+            <div class="clear"></div>
+          </div> -->
+          <div class="row skill">
+            <div class="three columns header-col">
+              <h1><span>Skills</span></h1> <br>
+            </div>
+            <div class="nine columns main-col">
+              <p style="color: white;">• Photoshop Cs6,Lightroom v5,Videoediting
+                • Html,Css and Javascript.
+                • Configure CCTV Camera
+                • MsWord,MsExcel,MsPowerpoint
+                • Freelance Photographer,Videographer
+                • Knowledge in (networking,vb.net,Web Dev)
+                • Dedicated and hardworking individual
+                • Analytical mind and positive attitude.
+                • Ability to manage time effectively
+              </p>
+              <div class="bars">
+                <ul class="skills">
+                  <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+                  <li><span class="bar-expand css"></span><em>CSS</em></li>
+                  <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+                </ul>
+                </div><!-- end skill-bars -->
+                </div> <!-- main-col end -->
+                </div> <!-- End skills -->
+              </section>
+              <section id="experience" class="page">
+                <div class="container_12">
+                  <div class="grid_12">
+                    <h2>Work Experience</h2>
+                    <div class="block-1">
+                      <div class="grid_4 alpha">
+                        <div class="block-1__left">
+                          <h3>2017 - Present</h3>
+                          <time  datetime="2014-01-01" class="text-2">April</time>
+                          <div class="ta__right">
+                            <div class="text-2 color1">Lagility</div>
+                            The Art & Science of Software Development.  division of the Asset Development Group, LLC.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid_8 omega">
+                        <div class="block-2__right">
+                          <h3>Job Description</h3>
+                          <div class="text-2">Front-end Developer</div>
+                          <p> A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application.  </p>
+                          They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.
+                        </div>
+                      </div>
+                    </div>
+                    <h2 style="padding-left: 15%;">EDUCATIONAL ATTAINMENT</h2>
+                    
+                    <div class="block-1">
+                      <div class="grid_4 alpha">
+                        <div class="block-1__left">
+                          <h3>2013 - 2017</h3> <br>
+                          <time  datetime="2014-01-01" class="text-2">June <span>March</span></time>
+                          <h3>2012 - 2012</h3>
+                          
+                          <time  datetime="2014-01-01" class="text-2">June <span></span></time>
+                          <div class="ta__right">
+                            <div class="text-2 color1">BSIT</div>
+                            Bachelor of Science in Information Technology
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid_8 omega">
+                        <div class="block-2__right">
+                          <!--  <h3>Job Description</h3> -->
+                          <div class="text-2" style="font-weight: bold;">College</div>
+                          <p>Our Lady of Fatima University Pampanga </p>
+                          Dela Paz McArthur Highway in San Fernando City, Pampanga
+                        </div>
+                      </div>
+                      <div class="grid_8 omega">
+                        <div class="block-2__right">
+                          <!--  <h3>Job Description</h3> -->
+                          <div class="text-2">College</div>
+                          <p>UNIVERSITY OF THE ASSUMPTION </p>
+                          Del Pilar City of San Fernando Pampanga
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-1">
+                      <div class="grid_4 alpha">
+                        <div class="block-1__left">
+                          <h3>2008 - 2012</h3> <br>
+                          <time datetime="2014-01-01" class="text-2">June <span>March</span></time>
+                          
+                        </div>
+                      </div>
+                      <div class="grid_8 omega">
+                        <div class="block-2__right">
+                          <!--  <h3>Job Description</h3> -->
+                          <div class="text-2" style="font-weight: bold;">Secondary</div>
+                          <p>UNIVERSITY OF THE ASSUMPTION </p>
+                          Del Pilar City of San Fernando Pampanga
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-1">
+                      <div class="grid_4 alpha">
+                        <div class="block-1__left">
+                          <h3>2002 - 2008</h3> <br>
+                          <time datetime="2014-01-01" class="text-2">June <span>March</span></time>
+                          <!-- <div class="ta__right">
+                            <div class="text-2 color1"></div>
+                            Bachelor of Science in Information Technology
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="grid_8 omega">
+                        <div class="block-2__right">
+                          <div class="text-2" style="font-weight: bold;">Elementary</div>
+                          <p>San Fernando Elementary School</p>
+                          City of San Fernando Pampanga
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </section>
+              <section id="testimonials" class="page">
+                
+                <div class="container desc">
+                  <div class="row">
+                    <div class="col-lg-2 col-lg-offset-1">
+                      <h2 style="color: white;">Seminar Attended and Certificate</h2>
+                    </div>
+                    <div class="col-lg-6 hue">
+                      <p><t>Completed On the Job Training (OJT)</t><br/>
+                        Telesight Integrated Technology & Consultancy Inc., <br/>
+                      </p>
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>November 28 2016</sm></p>
+                    </div>
+                    
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Visual basic 6.0 programming</t><br/>
+                        Held at University of the Assumption
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>September 29 2012</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Completed On the Job Training (OJT)</t><br/>
+                        Government Service Insurance System Pampanga Branch Office
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>April 8 2015</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Member of Junior Philippine Computer Society (JPCS)</t><br/>
+                        Our Lady of Fatima University Pampanga
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>Academic year 2014-2015</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Android Programming (JPCS)</t><br/>
+                        Held at Our Lady of Fatima University Pampanga
+                      </p>
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>January 17 2015</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Internet of things using Intel Galileo</t><br/>
+                        Held at Our Lady of Fatima University Pampanga
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>March 18 2016</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>3D Animation using 3DS Max</t><br/>
+                        Held at Our Lady of Fatima University Pampanga
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>March 18 2016</sm></p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-3 hue">
+                      <p><t>Kinect Gesture Based Game Development</t><br/>
+                        Held at Our Lady of Fatima University Pampanga
+                      </p>
+                      
+                    </div>
+                    <div class="col-lg-3 hue-date">
+                      <p><sm>March 18 2016</sm></p>
+                    </div>
+                    </div><!--/.row -->
+                    <br>
+                    </div><!--/.container -->
+                    
+                    
+                    
+                    
+                    <!--  <div class="container_12">
+                      <div class="grid_12">
+                        <h2 class="color2">Testimonials</h2>
+                      </div>
+                      <div class="grid_4">
+                        <blockquote class="bq1">
+                          <img src="images/page-img_2.jpg" alt="">
+                          <div class="extra_wrapper">
+                            <div class="text-2"><a href="#">Helen Thomson</a></div>
+                            Korem ipsum dolor sittur dipiscing elit. In molliserat mattis neque facilisisltries wertolio dasererat
+                          </div>
+                        </blockquote>
+                      </div>
+                      <div class="grid_4">
+                        <blockquote class="bq1">
+                          <img src="images/page-img_3.jpg" alt="">
+                          <div class="extra_wrapper">
+                            <div class="text-2"><a href="#">Mark Grey</a></div>
+                            Morem ipsum dolor sittur dipiscing elit. In molliserat mattis neque facilisisltries wertolio daserera
+                          </div>
+                        </blockquote>
+                      </div>
+                      <div class="grid_4">
+                        <blockquote class="bq1">
+                          <img src="images/page-img_4.jpg" alt="">
+                          <div class="extra_wrapper">
+                            <div class="text-2"><a href="#">Irma Wood</a></div>
+                            Torem ipsum dolor sittur dipiscing elit. In molliserat mattis neque facilisisltries wertolio dasererum
+                          </div>
+                        </blockquote>
+                      </div>
+                      <div class="clear"></div>
+                    </div> -->
+                  </section>
+                  <!-- <section id="contacts" class="page">
+                    <div id="footwrap">
+                      <div class="container-foot">
+                        <div class="row-foot">
+                          
+                          <div class="col-lg-2 col-lg-offset-1">
+                            <h2>Contact</h2>
+                          </div>
+                          <div class="col-lg-2" style="padding-left: 300px;">
+                            <p><t>Email</t><br/>
+                              lazerjan11@gmail.com <br/>
+                            </p>
+                            <p><t>Adress</t><br/>
+                              Purok 10 <br/>
+                              Sta. Lucia<br/>
+                              San Fernando, Pampanga. <br/>
+                              Philippine, 2000<br/>
+                            </p>
+                            <p><t>Phone</t><br/>
+                              +63 926 359-3488 <br/>
+                            </p>
+                          </div>
+                          <div class="col-lg-3">
+                            <p><sm>SOCIAL LINKS</sm></p>
+                            <p>
+                              <a href="#"><i class="icon-dribbble"></i></a>
+                              <a href="#"><i class="icon-twitter"></i></a>
+                              <a href="#"><i class="icon-facebook"></i></a>
+                              <a href="#"><i class="icon-linkedin"></i></a>
+                              <a href="#"><i class="icon-apple"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="google-map-api">
+                      <div id="map-canvas" class="gmap"></div>
+                    </div>
+                    <div class="container_12">
+                      <div class="grid_12">
+                        <div class="social-icons">
+                          <a href="#" class="fa fa-twitter"></a>
+                          <a href="#" class="fa fa-facebook"></a>
+                          <a href="#" class="fa fa-google-plus"></a>
+                          <a href="#" class="fa fa-pinterest"></a>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                  </section> -->
+                </section>
+                <!--==============================
+                footer
+                =================================-->
+              </div>
+              <footer id="footer">
+                <div class="container_12">
+                  <div class="grid_12">
+                    <div class="copyright"> &copy; <span id="copyright-year">2017</span>| <a href="#">Privacy Policy </a> <br>
+                    Website designed by <a href="#" rel="nofollow">Lazer Jan Caraan</a>
+                  </div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </footer>
+            <a href="#" id="toTop" class="fa fa-chevron-up"></a>
+            <script src="js/jquery.singlePageNav.min.js"></script>
+            <script>
+            // Prevent console.log from generating errors in IE for the purposes of the demo
+            if ( ! window.console ) console = { log: function(){} };
+            // The actual plugin
+            $('.single-page-nav').singlePageNav({
+            offset: $('.single-page-nav').outerHeight(),
+            filter: ':not(.external)',
+            updateHash: true,
+            beforeStart: function() {
+            console.log('begin scrolling');
+            },
+            onComplete: function() {
+            console.log('done scrolling');
+            }
+            });
+            </script>
+            <script type="text/javascript">
+            google_api_map_init();
+            function google_api_map_init(){
+            var map;
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
+            var styleArray = [
+            {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#193341"
+            }
+            ]
+            },
+            {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#2c5a71"
+            }
+            ]
+            },
+            {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#29768a"
+            },
+            {
+            "lightness": -37
+            }
+            ]
+            },
+            {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#406d80"
+            }
+            ]
+            },
+            {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#406d80"
+            }
+            ]
+            },
+            {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+            {
+            "visibility": "on"
+            },
+            {
+            "color": "#3e606f"
+            },
+            {
+            "weight": 2
+            },
+            {
+            "gamma": 0.84
+            }
+            ]
+            },
+            {
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+            "color": "#ffffff"
+            }
+            ]
+            },
+            {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "weight": 0.6
+            },
+            {
+            "color": "#1a3541"
+            }
+            ]
+            },
+            {
+            "elementType": "labels.icon",
+            "stylers": [
+            {
+            "visibility": "off"
+            }
+            ]
+            },
+            {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+            {
+            "color": "#2c5a71"
+            }
+            ]
+            }
+            ]
+            function initialize() {
+            var mapOptions = {
+            zoom: 13,
+            center: coordData,
+            scrollwheel: false,
+            styles: styleArray
+            }
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            google.maps.event.addDomListener(window, 'resize', function() {
+            map.setCenter(coordData);
+            var center = map.getCenter();
+            });
+            }
+            google.maps.event.addDomListener(window, "load", initialize);
+            }
+            </script>
+            <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+            <script src="js/jquery.knob.js"></script>
+            <script>
+            $(function($) {
+            $(".knob").knob({
+            change : function (value) {
+            //console.log("change : " + value);
+            },
+            release : function (value) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + value);
+            },
+            cancel : function () {
+            console.log("cancel : ", this);
+            },
+            /*format : function (value) {
+            return value + '%';
+            },*/
+            draw : function () {
+            // "tron" case
+            if(this.$.data('skin') == 'tron') {
+            this.cursorExt = 0.3;
+            var a = this.arc(this.cv)  // Arc
+            , pa                   // Previous arc
+            , r = 1;
+            this.g.lineWidth = this.lineWidth;
+            if (this.o.displayPrevious) {
+            pa = this.arc(this.v);
+            this.g.beginPath();
+            this.g.strokeStyle = this.pColor;
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+            this.g.stroke();
+            }
+            this.g.beginPath();
+            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+            this.g.stroke();
+            this.g.lineWidth = 2;
+            this.g.beginPath();
+            this.g.strokeStyle = this.o.fgColor;
+            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+            this.g.stroke();
+            return false;
+            }
+            }
+            });
+            // Example of infinite knob, iPod click wheel
+            var v, up=0,down=0,i=0
+            ,$idir = $("div.idir")
+            ,$ival = $("div.ival")
+            ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+            ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+            $("input.infinite").knob(
+            {
+            min : 0
+            , max : 20
+            , stopper : false
+            , change : function () {
+            if(v > this.cv){
+            if(up){
+            decr();
+            up=0;
+            }else{up=1;down=0;}
+            } else {
+            if(v < this.cv){
+            if(down){
+            incr();
+            down=0;
+            }else{down=1;up=0;}
+            }
+            }
+            v = this.cv;
+            }
+            });
+            });
+            </script>
+            <script src="js/isotop_ini.js"></script>
+          </body>
+        </html>
